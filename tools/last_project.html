@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Future Mechanic</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+        }
+        h1, h2, h3 {
+            text-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="text-white flex flex-col">
+
+    <!-- Header/Navbar -->
+    <header class="bg-black bg-opacity-30 backdrop-blur-lg shadow-lg fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-3xl font-bold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">Future Mechanic</h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-purple-300 transition">Home</a>
+                <a href="#features" class="hover:text-purple-300 transition">Features</a>
+                <a href="#showcase" class="hover:text-purple-300 transition">Showcase</a>
+                <a href="#insights" class="hover:text-purple-300 transition">Insights</a>
+                <a href="#blog" class="hover:text-purple-300 transition">Blog</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="hamburger" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="flex flex-col items-center justify-center h-screen relative">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-80"></div>
+        <div class="relative z-10 text-center">
+            <h1 class="text-6xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">Revolutionizing Car Repair</h1>
+            <p class="mt-4 text-lg animate-pulse">Cutting-edge technology for your vehicle needs.</p>
+            <div class="mt-8 space-x-4">
+                <button class="bg-purple-600 text-white px-4 py-2 rounded-full transform transition-all hover:scale-110 shadow-lg">Get Started</button>
+                <button class="bg-transparent border border-purple-600 text-purple-600 px-4 py-2 rounded-full transform transition-all hover:scale-110 shadow-lg">Learn More</button>
+            </div>
+        </div>
+        <img src="/storage/projects/59/images/hero.png" data-image="hero" class="ai-image w-full h-auto rounded" alt="hero">
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold">Our Mission</h2>
+            <p class="mt-4">At Future Mechanic, we blend innovation with automotive care. Our aim is to provide supreme service using state-of-the-art technology.</p>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section id="showcase" class="py-20 bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+                <div class="bg-black bg-opacity-50 p-6 rounded-lg backdrop-blur-lg transition-transform transform hover:scale-105 shadow-lg">
+                    <h3 class="text-xl font-semibold">Car Maintenance</h3>
+                    <p>Regular maintenance to keep your vehicle running smoothly.</p>
+                </div>
+                <div class="bg-black bg-opacity-50 p-6 rounded-lg backdrop-blur-lg transition-transform transform hover:scale-105 shadow-lg">
+                    <h3 class="text-xl font-semibold">Engine Diagnostics</h3>
+                    <p>Advanced diagnostics to identify and resolve issues.</p>
+                </div>
+                <div class="bg-black bg-opacity-50 p-6 rounded-lg backdrop-blur-lg transition-transform transform hover:scale-105 shadow-lg">
+                    <h3 class="text-xl font-semibold">Tire Services</h3>
+                    <p>Expert tire maintenance and replacements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Section -->
+    <section id="metrics" class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold">Our Impact</h2>
+            <div class="mt-10 space-x-8">
+                <div class="inline-block">
+                    <h3 class="text-6xl font-bold">1,000+</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="inline-block">
+                    <h3 class="text-6xl font-bold">200+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="inline-block">
+                    <h3 class="text-6xl font-bold">99%</h3>
+                    <p>Customer Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center">What Our Clients Say</h2>
+            <div class="mt-10 space-y-4">
+                <div class="bg-black bg-opacity-50 p-6 rounded-lg backdrop-blur-lg transition-transform transform hover:scale-105 shadow-lg">
+                    <p>"Amazing service! My car has never run better!"</p>
+                    <p class="font-bold">- John Doe</p>
+                </div>
+                <div class="bg-black bg-opacity-50 p-6 rounded-lg backdrop-blur-lg transition-transform transform hover:scale-105 shadow-lg">
+                    <p>"Professional and friendly staff, highly recommend!"</p>
+                    <p class="font-bold">- Jane Smith</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center">Latest Insights</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+                <div class="bg-black bg-opacity-50 p-6 rounded-lg backdrop-blur-lg transition-transform transform hover:scale-105 shadow-lg">
+                    <img src="/storage/projects/59/images/blog1.png" data-image="blog1" class="ai-image w-full h-auto rounded" alt="blog1">
+                    <h3 class="mt-4 font-semibold">How to Maintain Your Car</h3>
+                    <p>Tips and tricks for keeping your vehicle in top shape.</p>
+                </div>
+                <div class="bg-black bg-opacity-50 p-6 rounded-lg backdrop-blur-lg transition-transform transform hover:scale-105 shadow-lg">
+                    <img src="/storage/projects/59/images/blog2.png" data-image="blog2" class="ai-image w-full h-auto rounded" alt="blog2">
+                    <h3 class="mt-4 font-semibold">Understanding Engine Diagnostics</h3>
+                    <p>A deep dive into diagnosing car issues effectively.</p>
+                </div>
+                <div class="bg-black bg-opacity-50 p-6 rounded-lg backdrop-blur-lg transition-transform transform hover:scale-105 shadow-lg">
+                    <img src="/storage/projects/59/images/blog3.png" data-image="blog3" class="ai-image w-full h-auto rounded" alt="blog3">
+                    <h3 class="mt-4 font-semibold">The Future of Automotive Repair</h3>
+                    <p>Exploring technological advancements in car maintenance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-20 bg-gray-800 text-center">
+        <h2 class="text-4xl font-bold">Stay Updated</h2>
+        <p class="mt-4">Join our newsletter for the latest tips and offers</p>
+        <div class="mt-6">
+            <button class="bg-purple-600 text-white px-4 py-2 rounded-full">Subscribe</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black bg-opacity-30 backdrop-blur-lg py-10">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="text-center">
+                <h1 class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">Future Mechanic</h1>
+                <p class="mt-1">Revolutionizing Automotive Service.</p>
+            </div>
+            <div class="text-center">
+                <h3 class="font-bold">Products</h3>
+                <ul>
+                    <li><a href="#" class="hover:text-purple-300 transition">Maintenance Kits</a></li>
+                    <li><a href="#" class="hover:text-purple-300 transition">Diagnostics Tools</a></li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <h3 class="font-bold">Company</h3>
+                <ul>
+                    <li><a href="#" class="hover:text-purple-300 transition">About Us</a></li>
+                    <li><a href="#" class="hover:text-purple-300 transition">Careers</a></li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <h3 class="font-bold">Resources</h3>
+                <ul>
+                    <li><a href="#" class="hover:text-purple-300 transition">Blog</a></li>
+                    <li><a href="#" class="hover:text-purple-300 transition">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p>&copy; <span id="year"></span> Future Mechanic. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.querySelector('nav');
+        hamburger.addEventListener</script><script>
+(function(){
+  function setupFaqs(){
+    var qSelectors = '[data-faq-question], .faq-question';
+    document.querySelectorAll(qSelectors).forEach(function(q){
+      q.style.cursor = 'pointer';
+      q.addEventListener('click', function(){
+        var ans = q.nextElementSibling;
+        if(!ans) return;
+        if(ans.style.display === 'none' || window.getComputedStyle(ans).display === 'none'){
+          ans.style.display = 'block';
+        } else {
+          ans.style.display = 'none';
+        }
+      });
+    });
+    document.querySelectorAll('details').forEach(function(d){ d.style.cursor='pointer'; });
+  }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setupFaqs); else setupFaqs();
+})();
+</script>
+<!-- sg-hidden-faq-script-inserted --></body></html>
