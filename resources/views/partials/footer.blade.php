@@ -20,7 +20,7 @@
                     </div>
                     <p class="text-gray-300 mb-4 max-w-md">
                         The only AI that generates complete, professional websites from simple prompts.
-                        No coding required.
+                        No coding required....
                     </p>
                     <div class="flex space-x-4">
                         <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors">
