@@ -6,11 +6,15 @@
               <div class="flex items-center space-x-2">
                   <div
                       class="w-10 h-10 bg-gradient-to-r from-cyan-400 to-green-400 rounded-lg flex items-center justify-center">
-                      <span class="text-black font-bold text-xl"><a href="/">PS</a></span>
+                      <span class="text-black font-bold text-xl"><a href="/">
+            <img src="{{ asset('images/logo.png') }}" 
+                 alt="PromptSite Logo" 
+                 class="w-full h-full object-cover">
+        </a>
+</span>
                   </div>
                   <span
-                      class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-                      PromptSite
+                      class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent"><a href="/">PromptSite</a>
                   </span>
               </div>
 
